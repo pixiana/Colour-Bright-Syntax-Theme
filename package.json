@@ -2,10 +2,11 @@
   "name": "simple-syntax",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A simple syntax theme",
+  "description": "A simple syntax theme.",
   "keywords": [
     "syntax",
-    "theme"
+    "theme",
+    "simple"
   ],
   "repository": "https://github.com/atom/simple-syntax",
   "license": "MIT",
