@@ -10,7 +10,7 @@
 @syntax-background-color: @white;
 
 // Guide colors
-@syntax-wrap-guide-color: @dark-gray;
+@syntax-wrap-guide-color: #cccccc;
 @syntax-indent-guide-color: @gray;
 @syntax-invisible-character-color: @gray;
 
@@ -19,10 +19,10 @@
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @gray;
-@syntax-gutter-text-color-selected: lighten(@syntax-gutter-text-color, 10%);
-@syntax-gutter-background-color: @white;
-@syntax-gutter-background-color-selected: lighten(@light-gray, 20%);
+@syntax-gutter-text-color: lighten(@gray, 25%);
+@syntax-gutter-text-color-selected: lighten(@syntax-gutter-text-color, 100%);
+@syntax-gutter-background-color: lighten(@very-light-gray, 15%);
+@syntax-gutter-background-color-selected: lighten(@light-gray, 15%);
 
 // For git diff info. i.e. in the gutter
 @syntax-color-renamed: @blue;
