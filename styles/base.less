@@ -1,4 +1,4 @@
-@import "variables";
+@import "syntax-variables.less";
 
 atom-text-editor {
 	font-family: "SF Mono", "SF Pro", "GNU Unifont Full";
@@ -13,7 +13,7 @@ atom-text-editor {
 		color: @text-color-selected;
 	}
 	.wrap-guide {
-	  background-color: @syntax-wrap-guide-color;
+	  background-color: @background-color-info;
 	}
 	.indent-guide {
 	  color: @background-color-info;
@@ -51,6 +51,7 @@ atom-text-editor {
 		background-color: @background-color-selected;
 		color: @text-color-selected;
 	}
+}
 
 
 
@@ -113,5 +114,5 @@ atom-text-editor {
     color: #B5872B;
 }
 .syntax--support.variable  {
-    color:  #A5A6F4;
+    color: #A5A6F4;
 }
