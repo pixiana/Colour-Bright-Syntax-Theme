@@ -1,57 +1,5 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed and saved.
- *
- * Add your own CSS or Less to fully customize Atom.
- * If you are unfamiliar with Less, you can read more about it here:
- * http://lesscss.org
- */
+@import "variables";
 
-/*
- * Examples
- * (To see them, uncomment and save)
- */
-
-@text-color: hsl(250, 100%, 25%);
-@text-color-subtle: hsl(250, 20%, 65%);
-@text-color-highlight: hsl(260, 70%, 50%);
-@text-color-selected: hsl(300, 80%, 40%);
-
-@text-color-info: hsl(250, 70%, 60%);
-@text-color-success:  hsl(350, 100%, 92%;
-@text-color-warning: hsl(030, 90%, 35%);
-@text-color-error: hsl(190, 100%, 87%);
-
-@background-color-info: hsl(045, 100%, 91%);
-@background-color-success: hsl(180, 70%, 30%);
-@background-color-warning: hsl(220, 100%,88%);
-@background-color-error: hsl(330, 70%, 40%);
-
-@background-color-highlight: hsl(080, 90%, 80%);
-@background-color-selected: hsl(180, 90%, 80%);
-@app-background-color: hsl(070, 96%, 94%);
-@gutter-background: hsl(250, 96%, 90%);
-@fold-marker: hsl(250, 60%, 85%);
-
-.div.title {
-	font-family: "SF Pro", "SF Compact Round", "SF Compact Text", "GNU Unifont Full";
-}
-.atom-workspace {
-	font-family: "SF Pro", "GNU Unifont Full";
-	color: @text-color-subtle;
-}
-.ul.list-inline.tab-bar.inset-panel {
-	font-family: "SF Pro", "SF Mono", "GNU Unifont Full";
-}
-// style the background color of the tree view
-.tree-view {
-	font-family: "SF Pro", "SF Compact Round", "SF Compact Text", "GNU Unifont Full", "STIX General";
-	color: @text-color-info;
-	background-color: @background-color-info;
-}
-// style the background and foreground colors on the atom-text-editor-element itself
 atom-text-editor {
 	font-family: "SF Mono", "SF Pro", "GNU Unifont Full";
 	color: @text-color;
@@ -59,6 +7,16 @@ atom-text-editor {
 	text-decoration-style: @background-color-selected;
 	.invisible-character {
 		color: @background-color-info;
+	}
+	.selection .region {
+		background-color: @background-color-selected;
+		color: @text-color-selected;
+	}
+	.wrap-guide {
+	  background-color: @syntax-wrap-guide-color;
+	}
+	.indent-guide {
+	  color: @background-color-info;
 	}
 	.gutter {
 		background-color: @gutter-background;
@@ -93,21 +51,11 @@ atom-text-editor {
 		background-color: @background-color-selected;
 		color: @text-color-selected;
 	}
-}
+
+
 
 
 // SYNTAX
-
-
-@syntax-function-name: #B217E5;
-@syntax-class: #57C3A1;
-//@syntax-class-inherited: #57C3A1;
-//@syntax-type: #57C3A1;
-//@section:
-@tag:
-
-
-
 
 // applescript
 .syntax--comment {
@@ -135,7 +83,7 @@ atom-text-editor {
     color: ##0F00B2;
 }
 .syntax--storage  {
-    color: #FB0064;
+    color: #91A0FE;
 }
 .syntax--entity.name.class  {
     color: #57C3A1;
@@ -165,5 +113,5 @@ atom-text-editor {
     color: #B5872B;
 }
 .syntax--support.variable  {
-    color: #A5A6F4;
+    color:  #A5A6F4;
 }
