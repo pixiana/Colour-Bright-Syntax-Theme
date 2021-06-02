@@ -1,14 +1,14 @@
 {
-  "name": "simple-syntax",
-  "theme": "syntax",
+  "name": "Colour Bright Syntax Theme",
+  "theme": "Colour Bright Syntax Theme",
   "version": "0.1.0",
-  "description": "A simple syntax theme.",
+  "description": "Bright colourful theme",
   "keywords": [
     "syntax",
     "theme",
-    "simple"
+    "colour"
   ],
-  "repository": "https://github.com/justin-segler/simple-syntax",
+  "repository": "https://github.com/pixiana/simple-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
